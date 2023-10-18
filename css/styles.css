@@ -1,0 +1,97 @@
+*, html, body {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: Helvetica, sans-serif;
+   font-size: 16px;
+}
+
+main {
+   width: 100%;
+}
+
+.calculadora-principal {    
+   margin: 20px auto 0;
+   width: 60%;
+   height: 700px;
+   background-color: #ceffff;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   overflow: hidden;
+}
+
+.calculadora-principal > picture > img {
+   display: none;
+   width: 100%;
+   height: 700px;
+}
+
+.calculadora-principal > picture  {
+
+   width: 27%;
+   display: inline-block;
+}
+
+.calculadora-texto {
+   padding: 40px 50px;
+}
+.calculadora-texto > h1 {
+   font-size: 2rem;
+   margin-bottom: 30px;
+}
+
+.calculadora-texto > p {
+   font-size: 1.3rem;
+   max-width: 50%;
+}
+
+.calculadora-form {
+   padding: 0px 50px;
+   display: flex;
+   flex-direction: column;
+   max-width: 70%;
+}
+
+.calculadora-form > label{
+   font-weight: bold;
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+   margin-left: 10px;
+}
+
+.calculadora-form > input{
+   font-weight: bold;
+   font-size: 1.2rem;
+   width: 90%;
+   padding: 10px;
+   border-radius: 30px;
+   text-align: center;
+   border: 1px solid #ccc;
+}
+
+.calculadora-form > input:focus{
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra al enfocar el input */
+   outline: none;
+}
+
+.calculadoraSubmit {
+   margin-top: 20px;
+   padding: 10px 20px;
+   max-width: 90%;
+   font-size: 1.4rem;
+   background: #7fffd3;
+   border-radius: 20px  ;
+   border: 1px solid #ccc;
+}
+
+
+
+.calculadoraSubmit:hover{
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra al enfocar el input */
+   outline: none;
+}
+
+#resultado {
+   background: white;
+}
