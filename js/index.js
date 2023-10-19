@@ -6,25 +6,24 @@ const pesoInput = document.querySelector('#pesoInput');
 const resultado = document.querySelector('#resultado')
 const radio = document.querySelectorAll('input[name="sexo"]');
 const formSubmit = document.querySelector('.calculadoraSubmit')
+
+const adolecente = 'adolecente';
+const adulto = 'adulto';
+const mayor = 'mayor';
+const muyMayor = 'muyMayor';
+
 let sexSelected
 
 let findSelected = () => {
    const selected = document.querySelector('input[name="sexo"]:checked').value;
-   console.log(selected)
    sexSelected = selected;
 }
-
 
 radio.forEach(e => {
    e.addEventListener('change', e =>{
       findSelected()
    })
 })
-
-const adolecente = 'adolecente';
-const adulto = 'adulto';
-const mayor = 'mayor';
-const muyMayor = 'muyMayor';
 
 const calcularImc = (peso, altura) => {
    const imc = peso / (altura * altura);
@@ -41,11 +40,10 @@ const calcularImc = (peso, altura) => {
    const tipo = Object.keys(tiposImc).find(key => tiposImc[key]);
    
    return {
-       imc: imc,
-       tipo: tipo || 'Desconocido',
+      imc: imc,
+      tipo: tipo || 'Desconocido',
    };
 }
-
 
 const calcularCalorias = (sexo, edad, peso, altura) => {
    const tabla = {
@@ -78,21 +76,9 @@ const calcularCalorias = (sexo, edad, peso, altura) => {
 
 formSubmit.addEventListener('click', (e) => {
    e.preventDefault();
-
-   
-
-      // resultado = calcularPeso(radio.value, edadInput.value, pesoInput.value, alturaInput.value);
-     // console.log(checkRadio)
-   console.log(sexSelected)
    const valores =  calcularImc( pesoInput.value, alturaInput.value);
-   console.log(sexSelected)
    resultado.value = valores.imc;
-  
    imagenIMC.src = `../imagenes/${valores.tipo}${sexSelected[0]}.png`
    imagenIMC.style.display =  'inline-block'
-   
 });
-
-console.log(radio)
-console.log("Hola");
 
