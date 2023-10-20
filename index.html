@@ -3,49 +3,38 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>calculadora imc</title>
-   <link rel="stylesheet" href="./css/styles.css">
-   
+   <title>pagina</title>
+   <style>
+      *,html.body {
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+
+      main * {
+         margin-top: 50px;
+         font-size: 2rem;
+      }
+
+      main {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: auto;
+      }
+   </style>
 </head>
 <body>
    <main>
-      <section class="calculadora">
-         <div class="calculadora-principal">
-            <div class="calculadora-texto">
-               <h1>Calculadora IMC</h1>
-               <p>Por favor ingresa los siguientes datos para el calculo de tu IMC</p>
-            </div>
-           <form action="" class="calculadora-form">
-               <label for="edadInput">Edad: </label>
-               <input type="text" id="edadInput" required>
-               <label for="generoCheckBox"></label>
-               
-                  <input type="radio" name="sexo" id="hombreRadio"  value="Hombre" required> <label for="hombreRadio">Hombre </label> <br> <br>
-               
-               
-                  <input type="radio" name="sexo" id="mujerRadio" required value="Mujer"> <label for="mujerRadio">Mujer </label>
-               
-               <label for="pesoInput">Peso en kilos: </label>
-               <input type="text" id="pesoInput" required>
-               <label for="alturaInput">Altura en metros: </label>
-               <input type="text" id="alturaInput" required>
-               <button type="submit" class="calculadoraSubmit">calcular IMC</button>
-               <label for="resultado">Tu IMC es de: </label>
-               <input type="text" id="resultado" value="">
-               
-               
+      <h1>TRABAJOS SEGUNDO CORTE</h1>
+      <H2>BERNARDO ROSAS GARCIA</H2>
+      <H3>TCI 7-2 ----  Patricio Velazquez Cuadras</H3>
 
-            </form>
-
-            <picture>
-               <img src="./imagenes/01M.png" alt="" class="imagenIMC">
-            </picture>
-         </div>
-
-         
-      </section>
+      <ul>
+         <li><a href="/html/cotizacion.html">COTIZACION DE AUTOS</a></li>
+         <li><a href="/html/calculadora.html">CALCULADORA IMC</a></li>
+      </ul>
    </main>
-
-   <script src="/js/index.js"></script>
 </body>
 </html>

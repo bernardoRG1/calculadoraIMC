@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cotizacion.css">
+    <title>Agencia de Automoviles Patria</title>
+</head>
+<body>
+    <header>
+        <h1>Agenia de cotizacion</h1>
+        <h2>Cotizacion de automoviles</h2>
+    </header>
+    <section class="section">
+        <label for="Valor de automovil">Valor del automovil</label>
+        <input type="number" name="txtValorAuto" id="txtValorAuto" required>
+        <br>
+        <label for="Porcentaje"> Porcentaje de pago inicial</label>
+        <input type="number" name="txtPorcentaje" id="txtPorcentaje" required>
+        <br>
+        <label for="Plazos">Plazos</label>
+        <select name="plazos" id="plazos">
+            <option value="12">12 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+            <option value="48">48 meses</option>
+            <option value="60">60 meses</option>
+        </select>
+    </section>
+    <aside>
+        <hr>
+        <span>Calculos</span>
+        <hr>
+        <label for="Pagoinicia">Pago Inicial</label>
+        <input type="text" name="txtPagoInicial" id="txtPagoInicial" readonly>
+        <br>
+        <label for="TotalFin">Total al Financiar</label>
+        <input type="text" name="txtTotalFin" id="txtTotalFin" readonly>
+        <br>
+        <label for="pagoMensual">Pago Mensual</label>
+        <input type="text" name="txtPagoMensual" id="txtPagoMensual" readonly>
+        <br>
+        <center>
+            <button id="btnCalcular">Calcular</button>
+            <button id="btnLimpiar">Limpiar</button>
+        </center>
+        <footer>
+            <h3>Todos los derechos reservados por @Jorge Rendon</h3>
+        </footer>
+    </aside>
+    <script src="../js/app.js"></script>
+</body>
+</html>
