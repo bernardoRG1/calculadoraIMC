@@ -31,11 +31,12 @@
          if (result > 9 && result < 100) {
             let resultFirstNum = document.createElement('img');
             let secondNumResultImg = document.createElement('img');
-            
+
             resultFirstNum.src = `../imagenes/nums/${resultConcat[0]}.png`;
             secondNumResultImg.src = `../imagenes/nums/${resultConcat[1]}.png`;
-            divRowContainer.appendChild(secondNumResultImg);
             divRowContainer.appendChild(resultFirstNum);
+
+            divRowContainer.appendChild(secondNumResultImg);
             } 
          else if (result >= 100) {
             console.log(100);
